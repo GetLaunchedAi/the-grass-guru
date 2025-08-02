@@ -1,0 +1,200 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'New Leaf Complete Landscape Services'
+tagTitle: 'Pixel Perfect Websites'
+preloadImg: '/images/landing-1920w.webp'
+preloadCSS: '/css/local.css'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+<section id="hero">
+  <video autoplay muted loop playsinline class="cs-picture">
+    <source src="/images/downsherobg.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="cs-overlay"></div>
+  <div class="cs-container">
+    <div class="cs-flex-group">
+      <span class="cs-topper">Michigan’s Trusted Construction Experts</span>
+      <h1 class="cs-title">Home Additions, Renovations & Pole Barns Built to Last</h1>
+      <p class="cs-text">
+        With 29+ years of experience, we specialize in custom home additions, full-scale renovations, and durable pole barn construction. Our team delivers clean, high-quality workmanship backed by integrity and exceptional service.
+      </p>
+      <a href="/services" class="cs-button-solid">View Our Services</a>
+      <a href="/about" class="cs-button-transparent">
+        <img class="cs-img" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17" />
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="card">
+    <picture>
+      <img aria-hidden="true" decoding="async" src="/assets/svgs/service1.svg" alt="addition icon" width="48" height="48" />
+    </picture>
+    <h2>Home Additions</h2>
+    <p>Expand your living space with custom home additions designed for comfort, function, and long-term value.</p>
+  </div>
+  <div class="card">
+    <picture>
+      <img aria-hidden="true" decoding="async" src="/assets/svgs/service2.svg" alt="renovation icon" width="48" height="48" />
+    </picture>
+    <h2>Interior & Exterior Renovations</h2>
+    <p>From kitchen remodels to exterior facelifts, we revitalize homes with clean, high-standard construction.</p>
+  </div>
+  <div class="card">
+    <picture>
+      <img aria-hidden="true" decoding="async" src="/assets/svgs/service3.svg" alt="pole barn icon" width="48" height="48" />
+    </picture>
+    <h2>Pole Barn Construction</h2>
+    <p>We build durable, functional pole barns tailored for workshops, storage, agriculture, and more.</p>
+  </div>
+</section>
+
+<section id="sbs">
+  <div class="cs-container">
+    <div class="cs-left">
+      {% image './src/images/aboutimg1.png', 'construction team at work', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/aboutimg2a.png', 'renovation project', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">Over 29 Years of Construction Excellence</h2>
+      <p class="cs-text">
+        With nearly three decades in the trades, we bring unmatched craftsmanship, professionalism, and passion to every project. We believe in continuous improvement and operate with purpose-driven leadership.
+      </p>
+      <p class="cs-text">
+        Our team delivers clean, organized work with a focus on long-term quality and strong customer relationships. We don’t just build structures—we build trust.
+      </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          "We’re driven by purpose, guided by integrity, and committed to excellence in every detail."
+        </p>
+        <span class="cs-name">Brian Downs Jr</span>
+        <span class="cs-job">Founder</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote icon" width="136"
+          height="77" />
+      </div>
+      <a href="/about" class="button-solid">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<section id="sbs-r">
+  <div class="cs-container">
+    <div class="cs-left">
+      {% image './src/images/featuredimg2.png', 'residential construction project', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/featuredimg1.png', 'kitchen remodel', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <div class="cs-right">
+      <span class="cs-topper">Additional Services</span>
+      <h2 class="cs-title">General Contracting, Windows, Fencing & More</h2>
+      <p class="cs-text">
+        We offer a full range of services including general contracting, window installation, bathroom and kitchen remodels, privacy fence construction, concrete work, and fire restoration. Our expert team handles every detail with precision.
+      </p>
+      <p class="cs-text">
+        Whether you’re repairing after fire damage or upgrading for comfort and style, we’re your trusted partner for residential construction and renovation across Southwest Michigan.
+      </p>
+      <a href="/services" class="button-solid">Explore All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews">
+  <div class="cs-container">
+    <span class="cs-topper">Our Reviews</span>
+    <h2 class="cs-title">Words From Our Customers</h2>
+    <p class="cs-text">
+      We take pride in delivering top-quality lakeshore and landscape solutions—and our customers agree. From shoreline
+      stabilization to custom patios and seawalls, we’ve helped Michigan homeowners transform their outdoor spaces with
+      durable, beautiful results. Here’s what they have to say about working with New Leaf Landscapes & Lakeshores.
+    </p>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png" alt="profile picture" width="80"
+          height="80" />
+        <p class="cs-item-p">
+          Newleaf Landscapes did some volunteer work for my disabled parents. What a professional job and what a
+          blessing. They saw a need while working on one if their clients and when they completed that job they stepped
+          up to help out a neighbor. They are a great company for our community.
+        </p>
+        <span class="cs-reviewer">
+          Stacey Tamara Wilder
+          <span class="cs-desc">Homeowner</span>
+        </span>
+        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16" />
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png" alt="profile picture" width="80"
+          height="80" />
+        <p class="cs-item-p">
+          Very pleased with the work Bill and his crew did with our seawall. Like many we had lost yard due to rising
+          lake levels, they came up with a great plan to work with our existing seawall. Hope this will keep us high and
+          dry for years to come!
+
+
+        </p>
+        <span class="cs-reviewer">
+          Kimber Abair
+
+          <span class="cs-desc">Homeowner</span>
+        </span>
+        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16" />
+      </li>
+    </ul>
+    <a aria-label="read more reviews" href="/reviews" class="button-solid">Read More</a>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">
+      Let’s Build Something Great Together
+    </h2>
+    <p>
+      Have a vision for your home or property? Contact us today to schedule your free estimate and take the first step toward lasting quality.
+    </p>
+    <a href="/contact" class="button-solid">Request a Free Estimate</a>
+  </div>
+  {% image './src/images/finalhomeimg.jpg', 'home renovation project', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window
+      .netlifyIdentity
+      .on('init', (user) => {
+        if (!user) {
+          window
+            .netlifyIdentity
+            .on('login', () => {
+              document.location.href = '/admin/';
+            });
+        }
+      });
+  }
+</script>

@@ -1,0 +1,354 @@
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-contact-242 {
+        padding: var(--sectionPadding);
+    }
+    #cs-contact-242 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #cs-contact-242 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+    #cs-contact-242 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #cs-contact-242 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 32.625rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #cs-contact-242 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 32.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #cs-contact-242 #cs-form-242 {
+        width: 100%;
+        /* 32px - 40px */
+        margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
+        /* 20px - 40px */
+        padding: clamp(1.25rem, 4.5vw, 2.5rem);
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        border: 1px solid #dad9e3;
+        border-radius: 1rem;
+    }
+    #cs-contact-242 .cs-label {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.3vw, 1rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        /* 16px - 20px */
+        margin-bottom: clamp(1rem, 1em, 1.25rem);
+        color: var(--headerColor);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #cs-contact-242 .cs-label-message {
+        /* 32px - 40px */
+        margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
+    }
+    #cs-contact-242 .cs-input,
+    #cs-contact-242 .cs-textarea {
+        font-size: 1rem;
+        width: 100%;
+        height: 4rem;
+        margin-top: 0.25rem;
+        padding-left: 1.25rem;
+        /* set transparent border so on hover border doesn't make it glitch */
+        border: 1px solid transparent;
+        border-bottom: 1px solid #b4b2c7;
+        /* prevents border & padding from affecting height */
+        box-sizing: border-box;
+        transition: border 0.3s;
+    }
+    #cs-contact-242 .cs-input:hover,
+    #cs-contact-242 .cs-textarea:hover {
+        border: 1px solid var(--primary);
+    }
+    #cs-contact-242 .cs-input::placeholder,
+    #cs-contact-242 .cs-textarea::placeholder {
+        color: #7d799c;
+    }
+    #cs-contact-242 .cs-textarea {
+        font-family: inherit;
+        margin: 0;
+        padding-top: 1.25rem;
+        min-height: 7.5rem;
+    }
+    #cs-contact-242 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+    #cs-contact-242 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #cs-contact-242 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #cs-contact-242 .cs-submit {
+        width: 100%;
+        border: none;
+        border-radius: 0.5rem;
+    }
+    #cs-contact-242 .cs-submit:hover {
+        cursor: pointer;
+    }
+    #cs-contact-242 .cs-right-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        /* 28px - 40px */
+        gap: clamp(1.75rem, 4vw, 2.5rem);
+        position: relative;
+    }
+    #cs-contact-242 .cs-ul {
+        padding: 0;
+        /* 16px - 32px */
+        padding-left: clamp(1rem, 3vw, 2rem);
+        margin: 0;
+        width: 100%;
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    #cs-contact-242 .cs-li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #cs-contact-242 .cs-li:hover .cs-icon-wrapper {
+        transform: scale(1.2);
+    }
+    #cs-contact-242 .cs-li:nth-of-type(2) {
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid #dad9e3;
+    }
+    #cs-contact-242 .cs-header {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        margin-bottom: 0.5rem;
+        color: var(--headerColor);
+        display: block;
+    }
+    #cs-contact-242 .cs-link {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.2em;
+        text-decoration: none;
+        color: var(--bodyTextColor);
+        position: relative;
+    }
+    #cs-contact-242 .cs-link:hover:before {
+        width: 100%;
+    }
+    #cs-contact-242 .cs-link:before {
+        /* top right box */
+        content: "";
+        width: 0%;
+        height: 2px;
+        /* current color of parent */
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s;
+    }
+    #cs-contact-242 .cs-block {
+        /* drop the address to two lines */
+        display: block;
+    }
+    #cs-contact-242 .cs-icon-wrapper {
+        /* 32px - 36px */
+        margin-right: clamp(2rem, 2.5vw, 2.25rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        transition: transform 0.3s;
+    }
+    #cs-contact-242 .cs-icon {
+        /* 32px -36px */
+        width: clamp(2rem, 3vw, 2.25rem);
+        height: auto;
+        display: block;
+    }
+    #cs-contact-242 .cs-picture {
+        width: 100%;
+        border-radius: clamp(1rem, 1.5vw, 1.25rem);
+        /* clips image corners */
+        overflow: hidden;
+        display: block;
+        position: relative;
+        /* width divided height */
+        aspect-ratio: 1.44;
+    }
+    #cs-contact-242 .cs-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+    #cs-contact-242 #cs-form-242 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /* sends it to the right in the 2nd position */
+        order: 2;
+    }
+    #cs-contact-242 .cs-label {
+        width: 48%;
+    }
+    #cs-contact-242 .cs-label-message {
+        width: 100%;
+    }
+    #cs-contact-242 .cs-button-solid {
+        margin-left: 0;
+    }
+    #cs-contact-242 .cs-right-section {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #cs-contact-242 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: 1.25em;
+        row-gap: 4rem;
+    }
+    #cs-contact-242 #cs-form-242 {
+        width: 50%;
+        max-width: 40.625rem;
+    }
+    #cs-contact-242 .cs-label {
+        width: 100%;
+    }
+    #cs-contact-242 .cs-right-section {
+        width: 45%;
+        max-width: 33.875rem;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        flex-direction: column;
+    }
+    #cs-contact-242 .cs-block {
+        /* sets address stay in one line */
+        display: inline-block;
+    }
+    #cs-contact-242 .cs-picture {
+        width: 100%;
+        max-width: 100%;
+        height: 27.375rem;
+    }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #cs-contact-242 .cs-text,
+    body.dark-mode #cs-contact-242 .cs-title {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-contact-242 #cs-form-242 label,
+    body.dark-mode #cs-contact-242 #cs-form-242 input,
+    body.dark-mode #cs-contact-242 #cs-form-242 textarea {
+        background-color: transparent;
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-contact-242 #cs-form-242 label::placeholder,
+    body.dark-mode #cs-contact-242 #cs-form-242 input::placeholder,
+    body.dark-mode #cs-contact-242 #cs-form-242 textarea::placeholder {
+        /* lighten up the color of the text by 90%*/
+        filter: brightness(1.9);
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #cs-contact-242 .cs-icon {
+        /* makes it so bright it turns white */
+        filter: brightness(900%);
+    }
+    body.dark-mode #cs-contact-242 .cs-header,
+    body.dark-mode #cs-contact-242 .cs-link {
+        color: var(--bodyTextColorWhite);
+    }
+}
+
+                                
