@@ -11,86 +11,182 @@ eleventyNavigation:
   order: 100
 ---
 <!-- Enter html code below -->
-
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
-<section id="hero">
-  <video autoplay muted loop playsinline class="cs-picture">
-    <source src="/images/downsherobg.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <div class="cs-overlay"></div>
-  <div class="cs-container">
-    <div class="cs-flex-group">
-      <span class="cs-topper">Michigan’s Trusted Construction Experts</span>
-      <h1 class="cs-title">Home Additions, Renovations & Pole Barns Built to Last</h1>
-      <p class="cs-text">
-        With 29+ years of experience, we specialize in custom home additions, full-scale renovations, and durable pole barn construction. Our team delivers clean, high-quality workmanship backed by integrity and exceptional service.
-      </p>
-      <a href="/services" class="cs-button-solid">View Our Services</a>
-      <a href="/about" class="cs-button-transparent">
-        <img class="cs-img" loading="lazy" decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17" />
-        Learn More
-      </a>
-    </div>
-  </div>
-</section>
 
-<section id="services" class="services">
-  <div class="card">
-    <picture>
-      <img aria-hidden="true" decoding="async" src="/assets/svgs/service1.svg" alt="addition icon" width="48" height="48" />
-    </picture>
-    <h2>Home Additions</h2>
-    <p>Expand your living space with custom home additions designed for comfort, function, and long-term value.</p>
-  </div>
-  <div class="card">
-    <picture>
-      <img aria-hidden="true" decoding="async" src="/assets/svgs/service2.svg" alt="renovation icon" width="48" height="48" />
-    </picture>
-    <h2>Interior & Exterior Renovations</h2>
-    <p>From kitchen remodels to exterior facelifts, we revitalize homes with clean, high-standard construction.</p>
-  </div>
-  <div class="card">
-    <picture>
-      <img aria-hidden="true" decoding="async" src="/assets/svgs/service3.svg" alt="pole barn icon" width="48" height="48" />
-    </picture>
-    <h2>Pole Barn Construction</h2>
-    <p>We build durable, functional pole barns tailored for workshops, storage, agriculture, and more.</p>
-  </div>
-</section>
+<section id="hero-2042">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Dental Care for Everyone</span>
+            <h1 class="cs-title">We Provide Dental Services & Surgery</h1>
+            <p class="cs-text">
+                From preventative care to restorative dentistry, our team is dedicated  to providing the best possible dental care for you.
+            </p>
+            <div class="cs-button-group">
+                <a href="" class="cs-button-solid">Get Started</a>
+            </div>
+        </div>
+        <button class="cs-play" aria-label="click to play video">
+            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/play-right.svg" alt="play icon" width="24" height="24" aria-hidden="true" decoding="async">
+        </button>
+    </div>
 
-<section id="sbs">
-  <div class="cs-container">
-    <div class="cs-left">
-      {% image './src/images/aboutimg1.png', 'construction team at work', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/aboutimg2a.jpg', 'renovation project', 'cs-picture cs-picture2', 'lazy'%}
+    <div class="cs-video-wrapper">
+        <!--Compress your video and upload it to a CDN like Digital Oceans Spaces so the video file doesn't cause load time issues. You can also remove the video tag and uncomment the picture tag to use a image instead of a video. Don't forget to remove the cs-play button!-->
+        <video loading="lazy" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Videos/gym.mp4" muted></video>
+        <!-- <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-image-2.png" alt="body builder" width="630" height="877">
+        </picture> -->
     </div>
-    <div class="cs-right">
-      <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">Over 29 Years of Construction Excellence</h2>
-      <p class="cs-text">
-        With nearly three decades in the trades, we bring unmatched craftsmanship, professionalism, and passion to every project. We believe in continuous improvement and operate with purpose-driven leadership.
-      </p>
-      <p class="cs-text">
-        Our team delivers clean, organized work with a focus on long-term quality and strong customer relationships. We don’t just build structures—we build trust.
-      </p>
-      <div class="cs-flex-group">
-        <p class="cs-flex-p">
-          "We’re driven by purpose, guided by integrity, and committed to excellence in every detail."
-        </p>
-        <span class="cs-name">Brian Downs Jr</span>
-        <span class="cs-job">Founder</span>
-        <img class="cs-quote-icon" loading="lazy" decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote icon" width="136"
-          height="77" />
-      </div>
-      <a href="/about" class="button-solid">More About Us</a>
-    </div>
-  </div>
 </section>
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1329">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Our Popular Services</h2>
+            </div>
+            <p class="cs-text">
+                In the new era of technology we look in the future with certainty and for any post types, or just they are so much great of all to a program.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-number">01</span>
+                    <h3 class="cs-h3">Audit & Assurance</h3>
+                    <p class="cs-item-text">
+                        We consider all the drivers
+                    </p>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/finance-screen.jpg">
+                    <source media="(min-width: 601px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/finance-screen.jpg">
+                    <img decoding="async"
+                            src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/finance-screen.jpg"
+                            alt="finance" width="413" height="374" aria-hidden="true">
+                </picture>
+                <!--On Hover Image-->
+                <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/Icon.svg" alt="arrow" width="412" height="249" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-number">02</span>
+                    <h3 class="cs-h3">Tax Advisory Services</h3>
+                    <p class="cs-item-text">
+                        We consider all the drivers
+                    </p>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/finance-reading.jpg">
+                    <source media="(min-width: 601px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/finance-reading.jpg">
+                    <img decoding="async"
+                            src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/finance-reading.jpg"
+                            alt="finance" width="413" height="374" aria-hidden="true">
+                </picture>
+                <!--On Hover Image-->
+                <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/Icon.svg" alt="arrow" width="412" height="249" aria-hidden="true">
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <span class="cs-number">03</span>
+                    <h3 class="cs-h3">Year-End Tax Planning</h3>
+                    <p class="cs-item-text">
+                        We consider all the drivers
+                    </p>
+                </a>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digita loceanspaces.com/Images/MISC/finance-laptop.png">
+                    <source media="(min-width: 601px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/finance-laptop.jpg">
+                    <img decoding="async"
+                            src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/finance-laptop.jpg"
+                            alt="finance" width="413" height="374" aria-hidden="true">
+                </picture>
+                <!--On Hover Image-->
+                <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/Icon.svg" alt="arrow" width="412" height="249" aria-hidden="true">
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+                                
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1206">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <!--To make your own PNG cropped people, use https://www.remove.bg/ to remove the background of any image-->
+            <!--Main Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/accountant2.png">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/accountant2.png">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/accountant2.png" alt="person with box" width="522" height="793"  aria-hidden="true">
+            </picture>
+            <!--Small Image-->
+            <div class="cs-box">
+                <img class="cs-box-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/growth.svg" alt="icon" width="40" height="40" aria-hidden="true">
+                <span class="cs-box-header">Business Growth</span>
+                <ul class="cs-box-ul">
+                    <li class="cs-box-li">Global Industry</li>
+                    <li class="cs-box-li">Smart Solution</li>
+                    <li class="cs-box-li">Fast Process</li>
+                </ul>
+            </div>
+            <div class="cs-stat">
+                <div class="cs-ring-wrapper">
+                    <span class="cs-number">90%</span>
+                    <!--Change the --ratio to the decimal percentage of this circle-->
+                    <svg class="cs-ring" style="--ratio: 0.90">
+                        <circle cx="50%" cy="50%" r="50%"/>
+                        <circle cx="50%" cy="50%" r="50%"/>
+                    </svg>
+                </div>
+                <span class="cs-header">Project Success</span>
+                <span class="cs-desc">by assisted startup</span>
+            </div>
+            <!--Circle Graphic-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/swirl.svg" alt="graphic" width="950" height="950" aria-hidden="true">
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Always Ready to Invest in Any Business</h2>
+            <h3 class="cs-h3">We consider all the drivers of change gives you the blocks pride for our components you need to change to create.</h3>
+            <p class="cs-text">
+                In the new era of technology we look in the future with certainty and pride for our company and business. consider all the drivers of change gives you the blocks & pride for our components you need to change to create a truly professional website In the new era.
+            </p>
+            <div class="cs-content-flair">
+                <ul class="cs-ul">
+                    <li class="cs-li">Stage-focused investing.</li>
+                    <li class="cs-li">Sector specialization.</li>
+                    <li class="cs-li">Active involvement.</li>
+                    <li class="cs-li">Portfolio diversification.</li>
+                    <li class="cs-li">Achieving a return.</li>
+                </ul>
+            </div>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+        </div>
+    </div>
+</section>
+<!-- ============================================ -->
+<!--            Side By Side Reverse              -->
+<!-- ============================================ -->
 
 <section id="sbs-r">
   <div class="cs-container">
@@ -111,6 +207,7 @@ eleventyNavigation:
     </div>
   </div>
 </section>
+                                                   
 
 <!-- ============================================ -->
 <!--                   Reviews                    -->
