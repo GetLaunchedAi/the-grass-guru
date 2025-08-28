@@ -1,15 +1,15 @@
 {
-  "name": "Downs Construction LLC",
-  "email": "downsconstructionllc@gmail.com",
-  "phone": "269-599-4913",
-  "phoneFormatted": "(269)-599-4913",
+  "name": "The Grass Guru",
+  "email": "badgerjason122@gmail.com",
+  "phone": "8108584135",
+  "phoneFormatted": "(810)-858-4135",
   "address": {
     "lineOne": "First Address Line",
     "lineTwo": "Second Address Line, If Needed",
-    "city": "Battle Creek",
-    "county": "Mi",
-    "postcode": "80206",
-    "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+    "city": "Your City",
+    "county": "MI",
+    "postcode": "00000",
+    "mapLink": "https://maps.app.goo.gl/YgvRDeanRYDEmv7K8"
   },
-  "domain": "www.website.com"
+  "domain": "www.thegrassguru.com"
 }

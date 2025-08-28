@@ -1,9 +1,10 @@
 ---
 layout: 'base.html'
-description: "Meta description for the page"
-metaTitle: 'Downs Construction LLC'
+description: "Learn more about The Grass Gurus, Michigan’s trusted lawn care and landscaping experts. Discover our
+story, values, and commitment to keeping your outdoors beautiful year-round."
+metaTitle: 'About The Grass Gurus | Lawn Care & Landscaping Experts'
 tagTitle: 'About Us'
-preloadImg: '/images/cabinets2-1920w.webp'
+preloadImg: '/images/about_banner.png'
 preloadCSS: '/css/about.css'
 permalink: 'about/'
 eleventyNavigation:
@@ -11,15 +12,13 @@ eleventyNavigation:
   order: 300
 ---
 
-<!-- Enter html code below -->
-
 <!-- ============================================ -->
 <!--                    LANDING                   -->
 <!-- ============================================ -->
 
 <section id="int-hero">
   <h1 id="home-h">About Us</h1>
-  {% image './src/images/bannerimg.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/about_banner.png', 'landscaping banner', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
@@ -30,36 +29,34 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/aboutimgwork.png', 'cabinets', 'cs-picture cs-picture1', 'lazy'%}
-      <!-- {% image './src/images/aboutimg2a.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%} -->
+      {% image './src/images/about_img_1.png', 'lawn care team at work', 'cs-picture cs-picture1', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
       <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About New Leaf</h2>
+      <h2 class="cs-title">The Grass Gurus Story</h2>
       <p class="cs-text">
-        At New Leaf Landscapes & Lakeshores, we bring over 25 years of experience creating beautiful, functional, and
-        environmentally responsible outdoor spaces across Michigan. From riprap rock seawalls and erosion control to
-        lakeside patios and outdoor living areas, we specialize in protecting and enhancing waterfront properties.
+        At The Grass Gurus, we are passionate about transforming lawns and landscapes into healthy, vibrant spaces that
+        families and businesses can enjoy. With years of hands-on experience, we’ve built a reputation across Michigan
+        for reliable service, professional results, and customer-first care.
       </p>
       <p class="cs-text">
-        Our journey began on a hog farm in Southwest Michigan—where the value of hard work was learned early. That
-        foundation, paired with a degree in environmental science, drives our passion for sustainable shoreline
-        solutions. We use industry-best practices and a proven process to ensure every project is completed on time, on
-        budget, and with care.
+        What started as a small neighborhood lawn care service has grown into a trusted name in landscaping and
+        property maintenance. We combine expert knowledge with top-quality equipment to deliver services that not only
+        look great but also promote long-term outdoor health. From mowing and seasonal cleanups to complete landscaping
+        solutions, we are committed to keeping your outdoors beautiful year-round.
       </p>
       <div class="cs-flex-group">
         <p class="cs-flex-p">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet
-          imperdiet for mind.
+          "Our mission is simple: to make your outdoor space look its best, while saving you time and stress."
         </p>
-        <span class="cs-name">Brian Downs Jr</span>
-        <span class="cs-job">CEO-Founder</span>
+        <span class="cs-name">The Grass Gurus Team</span>
+        <span class="cs-job">Michigan’s Lawn Care Experts</span>
         <img class="cs-quote-icon" loading="lazy" decoding="async"
-          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote icon" width="136"
           height="77">
       </div>
-      <a href="" class="button-solid">More About Us</a>
+      <a href="/contact/" class="button-solid">More About Us</a>
     </div>
   </div>
 </section>
@@ -70,13 +67,13 @@ eleventyNavigation:
 
 <section id="cta">
   <div class="container">
-    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <h2 class="title">Let’s Grow Something Great Together</h2>
     <p>
-      Big ideas start with a simple conversation. Reach out today and let’s get your project on the books.
+      Ready for a lawn you’ll be proud of? Contact The Grass Gurus today for professional lawn care and landscaping
+      services across Michigan.
     </p>
-    <a href="/contact.html" class="button-solid">Free Estimate</a>
+    <a href="/contact/" class="button-solid">Get a Free Estimate</a>
   </div>
-  {% image './src/images/finalhomeimg.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width:
-  850px)
-  850px, 1920'%}
+  {% image './src/images/final_home_img.png', 'lawn and landscape care', '', 'lazy', '(max-width: 400px) 400px,
+  (max-width: 850px) 850px, 1920'%}
 </section>

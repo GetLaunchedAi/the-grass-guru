@@ -231,7 +231,7 @@ If you have file paths you don't want to change to maintain SEO, for example /pe
 ---
 layout: 'base.html'
 description: "Meta description for the page"
-metaTitle: 'Downs Construction LLC'
+metaTitle: 'The Grass Guru'
 tagTitle: 'About'
 preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/about.css'

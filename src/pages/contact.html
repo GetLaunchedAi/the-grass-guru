@@ -1,9 +1,9 @@
 ---
 layout: 'base.html'
-description: 'Meta description for the page'
-metaTitle: 'Downs Construction LLC'
+description: 'Get in touch with The Grass Gurus today for expert lawn care and landscaping services across Michigan.'
+metaTitle: 'Contact The Grass Gurus | Lawn Care & Landscaping'
 tagTitle: 'Contact Us'
-preloadImg: '/images/cabinets2-1920w.webp'
+preloadImg: '/images/contact_banner.png'
 preloadCSS: '/css/contact.css'
 permalink: 'contact/'
 eleventyNavigation:
@@ -11,17 +11,16 @@ eleventyNavigation:
   order: 600
 ---
 
-<!-- Enter html code below -->
-
 <!-- ============================================ -->
 <!--                    LANDING                   -->
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">Contact Us</h1>
-  {% image './src/images/bannerimg.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px,
-  1920px'%}
+    <h1 id="home-h">Contact Us</h1>
+    {% image './src/images/contact_banner.png', 'landscaping contact banner', '', 'lazy', '(max-width: 400px) 400px,
+    (max-width: 850px) 850px, 1920px'%}
 </section>
+
 <!-- ============================================ -->
 <!--                Contact Form                  -->
 <!-- ============================================ -->
@@ -30,9 +29,10 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Here To Help</span>
-            <h2 class="cs-title">Contact Us</h2>
+            <h2 class="cs-title">Get In Touch With The Grass Gurus</h2>
             <p class="cs-text">
-                Whether you're ready to start your next landscaping project or just have a few questions, we're
+                Whether you're looking for regular lawn care, a landscaping project, or seasonal cleanup, our team is
+                here to help. Reach out today and let’s make your outdoor space thrive.
             </p>
         </div>
         <!-- Form -->
@@ -43,19 +43,22 @@ eleventyNavigation:
             </label>
             <label class="cs-label">
                 Email
-                <input class="cs-input" required type="text" id="email-242" name="email" placeholder="name@company.com">
+                <input class="cs-input" required type="email" id="email-242" name="email"
+                    placeholder="name@company.com">
             </label>
             <label class="cs-label">
                 Phone
-                <input class="cs-input" required type="text" id="phone-242" name="phone" placeholder="+1 (206) 987-6543">
+                <input class="cs-input" required type="tel" id="phone-242" name="phone" placeholder="+1 (810) 858-4135">
             </label>
             <label class="cs-label">
                 How Did You Find Us
-                <input class="cs-input" type="text" id="find-242" name="find-us" placeholder="Social Media, Family, Friend...">
+                <input class="cs-input" type="text" id="find-242" name="find-us"
+                    placeholder="Google, Social Media, Friend...">
             </label>
             <label class="cs-label cs-label-message">
                 Message
-                <textarea class="cs-input cs-textarea" required name="Message" id="message-242" placeholder="Hello, I’m interested in..."></textarea>
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-242"
+                    placeholder="Hello, I’m interested in..."></textarea>
             </label>
             <button class="cs-button-solid cs-submit" type="submit">Submit Message Now</button>
         </form>
@@ -64,41 +67,42 @@ eleventyNavigation:
             <ul class="cs-ul">
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg" alt="mail icon" class="cs-icon" width="36" height="36" decoding="async">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg"
+                            alt="mail icon" class="cs-icon" width="36" height="36" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Email</span>
-                        <a href="mailto:downsconstructionllc@gmail.com" class="cs-link">downsconstructionllc@gmail.com</a>
+                        <a href="mailto:badgerjason122@gmail.com" class="cs-link">badgerjason122@gmail.com</a>
                     </div>
                 </li>
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone.svg" alt="phone icon" class="cs-icon" width="36" height="36" decoding="async">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone.svg"
+                            alt="phone icon" class="cs-icon" width="36" height="36" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Phone</span>
-                        <a href="tel:206-987-6543" class="cs-link">(269) 599-4913</a>
+                        <a href="tel:8108584135" class="cs-link">(810) 858-4135</a>
                     </div>
                 </li>
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg" alt="address icon" class="cs-icon" width="36" height="36" decoding="async">
+                        <img aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg"
+                            alt="address icon" class="cs-icon" width="36" height="36" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Location</span>
-                        <a href="" class="cs-link">Battle Creek, Mi</a>
+                        <a href="" class="cs-link">Michigan, USA</a>
                     </div>
                 </li>
             </ul>
             <!-- Picture -->
             <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="/images/newleafmap.png">
-                <source media="(min-width: 601px)" srcset="/images/newleafmap.png">
-                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="/images/newleafmap.png" alt="google map" width="462" height="438">
+                <source media="(max-width: 600px)" srcset="/images/map.png">
+                <source media="(min-width: 601px)" srcset="/images/map.png">
+                <img class="cs-img" aria-hidden="true" loading="lazy" decoding="async" src="/images/map.png"
+                    alt="google map" width="462" height="438">
             </picture>
         </div>
     </div>
-</section>
-                                
-  </div>
 </section>
