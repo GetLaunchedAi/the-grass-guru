@@ -8,8 +8,8 @@ preloadImg: '/images/landing-1920w.webp'
 preloadCSS: '/css/local.css'
 permalink: '/'
 eleventyNavigation:
-  key: Home
-  order: 100
+key: Home
+order: 100
 ---
 <!-- ============================================ -->
 <!--                    Hero                      -->
@@ -35,8 +35,11 @@ eleventyNavigation:
   </div>
 
   <div class="cs-video-wrapper">
-    <video loading="lazy" src="/images/hero_vid.mp4" autoplay muted></video>
+    <video src="/images/hero_vid.mp4" autoplay muted loop playsinline preload="metadata"
+      poster="/images/landing.jpg">
+    </video>
   </div>
+
 </section>
 
 <!-- ============================================ -->
