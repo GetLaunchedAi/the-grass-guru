@@ -1243,7 +1243,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Puts the slider behind the content */
+  z-index: -1;
+  /* Puts the slider behind the content */
   background-color: #000;
 }
 
@@ -1256,30 +1257,49 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 0; /* Initially hide all images */
-  transition: opacity 1s ease-in-out; /* Smooth fade effect */
+  opacity: 0;
+  /* Initially hide all images */
+  transition: opacity 1s ease-in-out;
+  /* Smooth fade effect */
 }
 
 /* First image on load */
 .cs-slide.cs-active {
-  opacity: 1; /* Make the first image visible */
+  opacity: 1;
+  /* Make the first image visible */
 }
 
 /* Slider Animation */
 @keyframes imageSlider {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  33.33% { opacity: 1; }
-  43.33% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  33.33% {
+    opacity: 1;
+  }
+
+  43.33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .cs-slider-wrapper .cs-slide:nth-child(1) {
   animation: imageSlider 18s infinite 0s;
 }
+
 .cs-slider-wrapper .cs-slide:nth-child(2) {
   animation: imageSlider 18s infinite 6s;
 }
+
 .cs-slider-wrapper .cs-slide:nth-child(3) {
   animation: imageSlider 18s infinite 12s;
 }
@@ -1292,12 +1312,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.1) 50%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.5) 100%);
   z-index: 1;
 }
 
@@ -1306,4 +1324,16 @@
   /* Existing styles... */
   position: relative;
   z-index: 10;
+}
+
+#hero-2042 .cs-topper {
+  font-size: var(--topperFontSize);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  display: block;
 }

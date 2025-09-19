@@ -15,7 +15,7 @@
         <a class="logo" aria-label="click to go to home page" href="/">
             <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
             <img class="light" aria-hidden="true" src="/assets/images/logo.png" decoding="async" alt="logo">
-            
+
             <!--Dark Colored Logo-->
             <img class="dark" aria-hidden="true" src="/assets/images/logo.png" decoding="async" loading="lazy"
                 alt="logo">
@@ -37,9 +37,10 @@
                         {{ entry.title }}
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/lawn-care-maintenance/">Lawn Care & Maintenance</a></li>
-                        <li><a href="/landscape-design-installation/">Landscape Design & Installation</a></li>
-                        <li><a href="/seasonal-cleanup/">Seasonal Clean-Up & Yard Care</a></li>
+                        <li><a class="service-link" href="/lawn-care-maintenance/">Lawn Care & Maintenance</a></li>
+                        <li><a class="service-link" href="/landscape-design-installation/">Landscape Design &
+                                Installation</a></li>
+                        <li><a class="service-link" href="/seasonal-cleanup/">Seasonal Clean-Up & Yard Care</a></li>
                     </ul>
                     {% else %}
                     <a {% if entry.url==page.url %} class="active" {% endif %} href="{{ entry.url }}">

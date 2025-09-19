@@ -170,3 +170,7 @@
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 51.02%, rgba(0, 0, 0, 0.64) 75.13%), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   }
 }
+
+.service-link{
+  color: #000 !important;
+}

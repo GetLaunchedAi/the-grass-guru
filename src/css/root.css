@@ -164,7 +164,7 @@
 .dropdown-menu {
   position: absolute;
   position-anchor: --dropdown;
-  top: 6rem;
+  top: 5rem;
   min-width: 200px;
   background-color: var(--primary);
   border: 1px solid #ddd;
