@@ -193,6 +193,9 @@
         font-size: 1.5rem;
         color: var(--primary);
     }
+    #content-page-1402 h4 {
+        color: var(--primary);
+    }
     #content-page-1402 h4,
     #content-page-1402 h5,
     #content-page-1402 h6 {
@@ -805,8 +808,29 @@
         align-items: flex-start;
     }
 
+    /* Universal cs-topper styling */
+    .cs-topper {
+        font-size: var(--topperFontSize) !important;
+        line-height: 1.2em !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+        letter-spacing: .1em !important;
+        font-weight: 700 !important;
+        color: var(--primary) !important;
+        margin-bottom: 1rem !important;
+        display: block !important;
+    }
+
     #services-563 .cs-topper {
-        color: var(--headerColor);
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1rem;
+        display: block;
     }
     #services-563 .cs-text {
         margin-bottom: 1rem;

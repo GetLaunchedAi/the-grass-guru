@@ -735,8 +735,8 @@ body.dark-mode #navigation #navbar-menu .dropdown.open .dropdown-menu {
     text-align: center;
   }
   #footer .left-section .logo img {
-    width: auto;
-    height: 100%;
+    width: 120px;
+    height: 120px;
     display: block;
   }
   #footer .left-section p {

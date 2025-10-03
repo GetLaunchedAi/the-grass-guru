@@ -11,7 +11,8 @@
     z-index: 1;
   }
 
-  #sbs-1206 .cs-container {
+  #sbs-1206 .cs-container,
+  #sbs-1206 .cs-container-reverse {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 36.5rem;
@@ -19,6 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
   }
 
@@ -31,8 +33,10 @@
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
+    justify-content: center;
     position: relative;
     z-index: 10;
+    margin: 0 auto;
   }
 
   #sbs-1206 .cs-text {
@@ -57,8 +61,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
-    row-gap: 2rem;
+    justify-content: flex-start;
+    row-gap: 1rem;
     column-gap: 1.25rem;
   }
 
@@ -71,7 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 
   #sbs-1206 .cs-li {
@@ -193,9 +197,11 @@
     max-width: 49.5625rem;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
     z-index: 1;
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   #sbs-1206 .cs-picture {
@@ -205,13 +211,15 @@
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    overflow: hidden;
   }
 
   #sbs-1206 .cs-picture img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    max-height: 600px;
+    object-fit: cover;
     border-radius: 1rem;
   }
 
@@ -358,17 +366,52 @@
   }
 }
 
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #sbs-1206 .cs-container {
-    max-width: 80rem;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+
+  #sbs-1206 .cs-container,
+  #sbs-1206 .cs-container-reverse {
+    max-width: 60rem;
+  }
+
+  #sbs-1206 .cs-container-reverse {
+    flex-direction: column !important;
   }
 
   #sbs-1206 .cs-content {
-    width: 45%;
+    max-width: 40rem;
+    justify-content: center;
+  }
+
+  #sbs-1206 .cs-image-group {
+    max-width: 40rem;
+    overflow: hidden;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+
+  #sbs-1206 .cs-container,
+  #sbs-1206 .cs-container-reverse {
+    max-width: 80rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  #sbs-1206 .cs-container-reverse {
+    flex-direction: row-reverse !important;
+  }
+
+  #sbs-1206 .cs-content {
+    width: 50%;
+    margin: 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #sbs-1206 .cs-ul {
@@ -384,10 +427,12 @@
 
   #sbs-1206 .cs-image-group {
     width: 50%;
-    margin-top: auto;
-    /* same exact clamp as the sectionPadding variable */
-    margin-bottom: calc(clamp(3.75rem, 7.82vw, 6.25rem) * -1);
-    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
   }
 
   #sbs-1206 .cs-picture {
@@ -400,23 +445,22 @@
 /* Large Desktop - 1500px */
 @media only screen and (min-width: 93.75rem) {
   #sbs-1206 .cs-image-group {
-    width: 44.9375rem;
-    left: -5.625rem;
+    width: 50%;
+    left: 0;
+    max-width: 40rem;
   }
 
   #sbs-1206 .cs-picture {
-    width: 44.9375rem;
-    height: 49.5625rem;
+    width: 100%;
+    max-width: 35rem;
+    height: auto;
   }
 
   #sbs-1206 .cs-picture img {
     width: 100%;
     height: auto;
-    max-height: 49.5625rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 1rem;
+    position: relative;
+    object-fit: cover;
   }
 
   #sbs-1206 .cs-graphic {
@@ -792,11 +836,11 @@
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     letter-spacing: .1em;
     font-weight: 700;
     color: var(--primary);
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
     display: block;
   }
 
@@ -1326,14 +1370,38 @@
   z-index: 10;
 }
 
-#hero-2042 .cs-topper {
+/* Universal cs-topper styling - applies to ALL cs-topper elements */
+.cs-topper {
+  font-size: var(--topperFontSize) !important;
+  line-height: 1.2em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  letter-spacing: .1em !important;
+  font-weight: 700 !important;
+  color: var(--primary) !important;
+  margin-bottom: 1rem !important;
+  display: block !important;
+}
+
+/* Specific section overrides */
+#hero-2042 .cs-topper,
+#services-1329 .cs-topper,
+#sbs-1206 .cs-topper,
+#content-page-1402 .cs-topper,
+#faq-254 .cs-topper {
   font-size: var(--topperFontSize);
   line-height: 1.2em;
   text-transform: uppercase;
-  text-align: left;
-  letter-spacing: 0.1em;
+  text-align: left !important;
+  letter-spacing: .1em;
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
   display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  #services-1329 .cs-topper {
+    text-align: center !important;
+  }
 }

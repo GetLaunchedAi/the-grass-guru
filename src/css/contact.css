@@ -26,15 +26,28 @@
         /* centers content horizontally, set to flex-start to left align */
         align-items: center;
     }
+    /* Universal cs-topper styling */
+    .cs-topper {
+        font-size: var(--topperFontSize) !important;
+        line-height: 1.2em !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+        letter-spacing: .1em !important;
+        font-weight: 700 !important;
+        color: var(--primary) !important;
+        margin-bottom: 1rem !important;
+        display: block !important;
+    }
+
     #cs-contact-242 .cs-topper {
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         text-transform: uppercase;
-        text-align: inherit;
-        letter-spacing: 0.1em;
+        text-align: center;
+        letter-spacing: .1em;
         font-weight: 700;
         color: var(--primary);
-        margin-bottom: 0.25rem;
+        margin-bottom: 1rem;
         display: block;
     }
     #cs-contact-242 .cs-title {
