@@ -38,7 +38,8 @@
         <link rel="preload" as="image" href="{{ preloadImg }}"/>
 
         <!-- Loading in page specific CSS sheets from css block -->
-        <link rel="stylesheet" href="/css/critical.css"/>
+    <link rel="stylesheet" href="/css/critical.css"/>
+    <link rel="stylesheet" href="/css/animations.css">
         <link rel="stylesheet" href="{{ preloadCSS }}">
 
         <!--Put analytics tag here at the bottom to prevent it from render blocking-->
@@ -55,6 +56,7 @@
     <body>
         <!--Screen reader skip main nav-->
         <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+        <script defer src="/assets/js/animations.js"></script>
 
         {% include "header.html" %}
         <main id="main">{{ content | safe }}</main>

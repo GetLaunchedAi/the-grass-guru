@@ -1,0 +1,114 @@
+.fade-in {
+    opacity: 0;
+    transition: opacity .5s;
+    will-change: opacity;
+  }
+  
+  .fade-in.in {
+    opacity: 1;
+  }
+  
+  .slide-top {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .5s, transform .5s;
+    will-change: opacity, transform;
+  }
+  
+  .slide-top.in {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .slide-right {
+    opacity: 0;
+    transform: translateX(24px);
+    transition: opacity .5s, transform .5s;
+    will-change: opacity, transform;
+  }
+  
+  .slide-right.in {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .slide-left {
+    opacity: 0;
+    transform: translateX(-24px);
+    transition: opacity .5s, transform .5s;
+    will-change: opacity, transform;
+  }
+  
+  .slide-left.in {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .slide-bottom {
+    opacity: 0;
+    transform: translateY(-24px);
+    transition: opacity .5s, transform .5s;
+    will-change: opacity, transform;
+  }
+  
+  .slide-bottom.in {
+    opacity: 1;
+    transform: none;
+  }
+  
+  
+  /* keep this AFTER .fx.in */
+  .parallax .bg.fx.in {
+    transform: translateY(calc(var(--p, 0) * -40px));
+  }
+  
+  .parallax .bg {
+    transform: translateY(calc(var(--p, 0) * -40px));
+  }
+  
+  @keyframes expand-in {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  
+    60% {
+      transform: scale(1.04);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .expand-in {
+    display: inline-block;
+    /* allow transform without affecting siblings */
+    transform-origin: center;
+    animation: expand-in .7s cubic-bezier(.2, .7, .2, 1) both;
+    /* both = apply final state */
+    will-change: transform, opacity;
+  }
+  
+  /* respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .expand-in {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .staggered-s {
+    transition-delay: calc(var(--i, 0) * 300ms);
+  }
+  
+  .staggered-m {
+    transition-delay: calc(var(--i, 0) * 175ms);
+  }
+  
+  .staggered-f {
+    transition-delay: calc(var(--i, 0) * 100ms);
+  }
