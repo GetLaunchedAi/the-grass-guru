@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Swap our for actual link-->
+        <link rel="canonical" href="https://www.thegrassguru.com/about/">
+
+        <meta name="description" content="Learn more about The Grass Gurus, Michigan’s trusted lawn care and landscaping experts. Discover our story, values, and commitment to keeping your outdoors beautiful year-round.">
+        <meta name="keywords" content="">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="About The Grass Gurus | Lawn Care &amp; Landscaping Experts"/>
+        <meta property="og:description" content="Learn more about The Grass Gurus, Michigan’s trusted lawn care and landscaping experts. Discover our story, values, and commitment to keeping your outdoors beautiful year-round."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.thegrassguru.com/about/"/>
+        <meta property="og:image" content="/images/social.jpg"/>
+        <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logo.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preload -->
+        <link rel="preload" as="image" href="/assets/logo.png">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <link rel="stylesheet" href="/css/root.css">
+        <link rel="stylesheet" href="/css/dark.css">
+
+        <link rel="preload" as="image" href="/images/about_banner.png"/>
+
+        <!-- Loading in page specific CSS sheets from css block -->
+    <link rel="stylesheet" href="/css/critical.css"/>
+    <link rel="stylesheet" href="/css/animations.css">
+        <link rel="stylesheet" href="/css/about.css">
+
+        <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+        <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
+        <title>
+            
+                About Us | The Grass Guru
+            
+        </title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+        <script defer src="/assets/js/animations.js"></script>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+
+<div id="navigation">
+    <div aria-hidden="true" class="background-color-div">
+        <!--This div is used to overcome a z-index issue where the open
+            #navbar-menu is on top of the #navigation. This bar places itself 
+            the #navbar-menu so that menu appears behind the #navigation
+        -->
+    </div>
+    <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a class="logo" aria-label="click to go to home page" href="/">
+            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+            <img class="light" aria-hidden="true" src="/assets/images/logo.png" decoding="async" alt="logo">
+
+            <!--Dark Colored Logo-->
+            <img class="dark" aria-hidden="true" src="/assets/images/logo.png" decoding="async" loading="lazy"
+                alt="logo">
+        </a>
+
+        <!--Mobile Nav toggle-->
+        <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
+            <!-- <span class="visually-hidden">Menu</span> -->
+            <span aria-hidden="true"></span>
+        </button>
+
+        <!--Main Nav-->
+        <nav id="navbar-menu" aria-label="main navigation">
+            <ul>
+                <li class="" id="Home">
+                    
+                    <a  href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                <li class="dropdown" id="Services">
+                    
+                    <a class="dropdown-toggle" role="button" tabindex="0">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="service-link" href="/lawn-care-maintenance/">Lawn Care & Maintenance</a></li>
+                        <li><a class="service-link" href="/landscape-design-installation/">Landscape Design &
+                                Installation</a></li>
+                        <li><a class="service-link" href="/seasonal-cleanup/">Seasonal Clean-Up & Yard Care</a></li>
+                    </ul>
+                    
+                </li>
+                <li class="" id="About Us">
+                    
+                    <a  class="active"  href="/about/">
+                        About Us
+                    </a>
+                    
+                </li>
+                <li class="" id="Contact">
+                    
+                    <a  href="/contact/">
+                        Contact
+                    </a>
+                    
+                </li>
+            </ul>
+        </nav>
+
+        <!--Dark Mode toggle-->
+        <button id="dark-mode-toggle">
+            <!--Moon is an inline SVG so you can edit the color if needed-->
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
+                style="enable-background:new 0 0 480 480" xml:space="preserve">
+                <path
+                    d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+            </svg>
+            <img class="sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="sun" width="15"
+                height="15">
+        </button>
+    </div>
+</div>
+        <main id="main">
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  <picture class="">
+      <source type="image/webp" srcset="/images/about_banner-200w.webp 200w, /images/about_banner-400w.webp 400w, /images/about_banner-850w.webp 850w, /images/about_banner-1457w.webp 1457w" sizes="(max-width: 850px) 850px, 1920px">
+  <source type="image/jpeg" srcset="/images/about_banner-200w.jpeg 200w, /images/about_banner-400w.jpeg 400w, /images/about_banner-850w.jpeg 850w, /images/about_banner-1457w.jpeg 1457w" sizes="(max-width: 850px) 850px, 1920px">
+      <img
+        src="/images/about_banner-200w.jpeg"
+        width="1457"
+        height="455"
+        alt="landscaping banner"
+        loading="lazy"
+        decoding="async">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left fx slide-right staggered-m" style="--i:1">
+      <picture class="cs-picture cs-picture1">
+      <source type="image/webp" srcset="/images/about_img_1-200w.webp 200w, /images/about_img_1-400w.webp 400w, /images/about_img_1-631w.webp 631w" sizes="(max-width: 600px) 400px, 850px">
+  <source type="image/jpeg" srcset="/images/about_img_1-200w.jpeg 200w, /images/about_img_1-400w.jpeg 400w, /images/about_img_1-631w.jpeg 631w" sizes="(max-width: 600px) 400px, 850px">
+      <img
+        src="/images/about_img_1-200w.jpeg"
+        width="631"
+        height="581"
+        alt="lawn care team at work"
+        loading="lazy"
+        decoding="async">
+    </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right fx slide-left staggered-m" style="--i:2">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">The Grass Gurus Story</h2>
+      <p class="cs-text">
+        At The Grass Gurus, we are passionate about transforming lawns and landscapes into healthy, vibrant spaces that
+        families and businesses can enjoy. With years of hands-on experience, we’ve built a reputation across Michigan
+        for reliable service, professional results, and customer-first care.
+      </p>
+      <p class="cs-text">
+        What started as a small neighborhood lawn care service has grown into a trusted name in landscaping and
+        property maintenance. We combine expert knowledge with top-quality equipment to deliver services that not only
+        look great but also promote long-term outdoor health. From mowing and seasonal cleanups to complete landscaping
+        solutions, we are committed to keeping your outdoors beautiful year-round.
+      </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          "Our mission is simple: to make your outdoor space look its best, while saving you time and stress."
+        </p>
+        <span class="cs-name">The Grass Gurus Team</span>
+        <span class="cs-job">Michigan’s Lawn Care Experts</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote icon" width="136"
+          height="77">
+      </div>
+      <a href="/contact/" class="button-solid">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Let’s Grow Something Great Together</h2>
+    <p>
+      Ready for a lawn you’ll be proud of? Contact The Grass Gurus today for professional lawn care and landscaping
+      services across Michigan.
+    </p>
+    <a href="/contact/" class="button-solid">Get a Free Estimate</a>
+  </div>
+  <picture class="">
+      <source type="image/webp" srcset="/images/final_home_img-200w.webp 200w, /images/final_home_img-400w.webp 400w, /images/final_home_img-850w.webp 850w, /images/final_home_img-1312w.webp 1312w" sizes="(max-width: 400px) 400px,
+  (max-width: 850px) 850px, 1920">
+  <source type="image/jpeg" srcset="/images/final_home_img-200w.jpeg 200w, /images/final_home_img-400w.jpeg 400w, /images/final_home_img-850w.jpeg 850w, /images/final_home_img-1312w.jpeg 1312w" sizes="(max-width: 400px) 400px,
+  (max-width: 850px) 850px, 1920">
+      <img
+        src="/images/final_home_img-200w.jpeg"
+        width="1312"
+        height="600"
+        alt="lawn and landscape care"
+        loading="lazy"
+        decoding="async">
+    </picture>
+</section></main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/logo.png" alt="logo"
+                    width="264" height="78"></a>
+
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Services</h2>
+                    </li>
+                    <li><a href="/lawn-care-maintenance/">Lawn Care & Maintenance</a></li>
+                    <li><a href="/landscape-design-installation/">Landscape Design & Installation</a></li>
+                    <li><a href="/seasonal-cleanup/">Seasonal Clean-Up & Yard Care</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>
+                        <a href="/contact">Michigan, US</a>
+                    </li>
+                    <li>
+                        <a href="tel:810-858-4135">T: (810)-858-4135</a>
+                    </li>
+                    <li>
+                        <a href="mailto:badgerjason122@gmail.com">Click to Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span>Designed and Hand Coded by</span>
+        <a href="www.kalamazoowebsitedesign.com" target="_blank" rel="noopener">Kalamazoo Website Design</a>
+        <span class="copyright"> Copyright 2025 - Present</span>
+    </div>
+</footer>
+
+        <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/dark.js"></script>
+
+        <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+        <script defer>
+            document.addEventListener('scroll', (e) => {
+                const scroll = document.documentElement.scrollTop;
+                if (scroll >= 100) {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .add('scroll')
+                } else {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .remove('scroll')
+                }
+            });
+        </script>
+
+    </body>
+</html>

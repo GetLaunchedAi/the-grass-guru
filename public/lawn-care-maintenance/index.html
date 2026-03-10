@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Swap our for actual link-->
+        <link rel="canonical" href="https://www.thegrassguru.com/lawn-care-maintenance/">
+
+        <meta name="description" content="Professional lawn care and maintenance in Michigan. The Grass Guru keeps lawns lush, green, and healthy with mowing, edging, trimming, fertilization, and seasonal upkeep.">
+        <meta name="keywords" content="">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Lawn Care &amp; Maintenance | The Grass Guru"/>
+        <meta property="og:description" content="Professional lawn care and maintenance in Michigan. The Grass Guru keeps lawns lush, green, and healthy with mowing, edging, trimming, fertilization, and seasonal upkeep."/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.thegrassguru.com/lawn-care-maintenance/"/>
+        <meta property="og:image" content="/images/social.jpg"/>
+        <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logo.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preload -->
+        <link rel="preload" as="image" href="/assets/logo.png">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <link rel="stylesheet" href="/css/root.css">
+        <link rel="stylesheet" href="/css/dark.css">
+
+        <link rel="preload" as="image" href="/images/lawn_banner.png"/>
+
+        <!-- Loading in page specific CSS sheets from css block -->
+    <link rel="stylesheet" href="/css/critical.css"/>
+    <link rel="stylesheet" href="/css/animations.css">
+        <link rel="stylesheet" href="/css/services.css">
+
+        <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+        <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
+        <title>
+            
+                Lawn Care &amp; Maintenance | The Grass Guru
+            
+        </title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+        <script defer src="/assets/js/animations.js"></script>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+
+<div id="navigation">
+    <div aria-hidden="true" class="background-color-div">
+        <!--This div is used to overcome a z-index issue where the open
+            #navbar-menu is on top of the #navigation. This bar places itself 
+            the #navbar-menu so that menu appears behind the #navigation
+        -->
+    </div>
+    <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a class="logo" aria-label="click to go to home page" href="/">
+            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+            <img class="light" aria-hidden="true" src="/assets/images/logo.png" decoding="async" alt="logo">
+
+            <!--Dark Colored Logo-->
+            <img class="dark" aria-hidden="true" src="/assets/images/logo.png" decoding="async" loading="lazy"
+                alt="logo">
+        </a>
+
+        <!--Mobile Nav toggle-->
+        <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
+            <!-- <span class="visually-hidden">Menu</span> -->
+            <span aria-hidden="true"></span>
+        </button>
+
+        <!--Main Nav-->
+        <nav id="navbar-menu" aria-label="main navigation">
+            <ul>
+                <li class="" id="Home">
+                    
+                    <a  href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                <li class="dropdown" id="Services">
+                    
+                    <a class="dropdown-toggle" role="button" tabindex="0">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="service-link" href="/lawn-care-maintenance/">Lawn Care & Maintenance</a></li>
+                        <li><a class="service-link" href="/landscape-design-installation/">Landscape Design &
+                                Installation</a></li>
+                        <li><a class="service-link" href="/seasonal-cleanup/">Seasonal Clean-Up & Yard Care</a></li>
+                    </ul>
+                    
+                </li>
+                <li class="" id="About Us">
+                    
+                    <a  href="/about/">
+                        About Us
+                    </a>
+                    
+                </li>
+                <li class="" id="Contact">
+                    
+                    <a  href="/contact/">
+                        Contact
+                    </a>
+                    
+                </li>
+            </ul>
+        </nav>
+
+        <!--Dark Mode toggle-->
+        <button id="dark-mode-toggle">
+            <!--Moon is an inline SVG so you can edit the color if needed-->
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
+                style="enable-background:new 0 0 480 480" xml:space="preserve">
+                <path
+                    d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z" />
+            </svg>
+            <img class="sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="sun" width="15"
+                height="15">
+        </button>
+    </div>
+</div>
+        <main id="main"><!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">Lawn Care & Maintenance</h1>
+  <picture class="">
+      <source type="image/webp" srcset="/images/lawn_banner-200w.webp 200w, /images/lawn_banner-400w.webp 400w, /images/lawn_banner-850w.webp 850w, /images/lawn_banner-1457w.webp 1457w" sizes="(max-width: 850px)
+  850px, 1920px">
+  <source type="image/jpeg" srcset="/images/lawn_banner-200w.jpeg 200w, /images/lawn_banner-400w.jpeg 400w, /images/lawn_banner-850w.jpeg 850w, /images/lawn_banner-1457w.jpeg 1457w" sizes="(max-width: 850px)
+  850px, 1920px">
+      <img
+        src="/images/lawn_banner-200w.jpeg"
+        width="1457"
+        height="530"
+        alt="lawn freshly cut by The Grass Guru"
+        loading="lazy"
+        decoding="async">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1402">
+  <div class="cs-container">
+    <div class="cs-image-group fx slide-top staggered-m" style="--i:1">
+      <div class="cs-flex">
+        <picture class="cs-background">
+          <source media="(max-width: 600px)" srcset="/images/lawn_0.png">
+          <source media="(min-width: 601px)" srcset="/images/lawn_0.png">
+          <img loading="lazy" decoding="async" src="/images/lawn_0.png" alt="freshly mowed lawn" width="542"
+            height="728">
+        </picture>
+        <div class="cs-box">
+          <img class="cs-box-icon" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="grass icon" width="60"
+            height="60">
+          <span class="cs-desc">
+            Reliable • Local Lawn Experts
+          </span>
+        </div>
+      </div>
+      <ul class="cs-card-group fx slide-top staggered-m" style="--i:3">
+        <li class="cs-item fx slide-top staggered-m" style="--i:4">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32" height="32">
+            Consistent Care
+          </h3>
+          <p class="cs-item-text">
+            From weekly mowing to edging and trimming, we provide detail-oriented lawn care that keeps your yard looking
+            its best.
+          </p>
+        </li>
+        <li class="cs-item fx slide-top staggered-m" style="--i:5">
+          <h3 class="cs-h3">
+            <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon" width="32" height="32">
+            Seasonal Solutions
+          </h3>
+          <p class="cs-item-text">
+            We handle spring and fall cleanups, aeration, fertilization, and weed control to maintain year-round lawn
+            health.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cs-content fx slide-top staggered-m" style="--i:2">
+      <hr />
+      <br /><br />
+
+      <h1 class="cs-title">Complete <span class="cs-color">Lawn Care & Maintenance</span> Services</h1>
+
+      <br />
+      <h3>Healthy, Green, and Well-Maintained Lawns</h3>
+      <br />
+      <p>
+        At The Grass Guru, we know that a healthy lawn is the foundation of a beautiful property. Our lawn care services
+        include professional mowing, edging, trimming, weed control, fertilization, aeration, and seasonal cleanups. We
+        take pride in providing reliable, affordable, and eco-friendly solutions that keep your yard lush and inviting.
+      </p>
+
+      <br />
+      <hr />
+      <br />
+
+      <div class="desktop-only">
+        <h3>Our Lawn Care Process</h3>
+        <ol>
+          <li>Consultation: discuss your lawn’s needs and create a custom plan</li>
+          <li>Service: mowing, edging, trimming, and fertilization as needed</li>
+          <li>Seasonal upkeep: cleanups, aeration, and overseeding for lasting results</li>
+        </ol>
+
+        <h4>Our Core Lawn Care Services</h4>
+        <ul>
+          <li>Weekly or bi-weekly mowing and edging</li>
+          <li>Fertilization and weed control programs</li>
+          <li>Aeration and overseeding for healthier growth</li>
+          <li>Spring and fall yard cleanups</li>
+          <li>Trimming and hedge maintenance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-563">
+  <div class="cs-container">
+    <picture class="cs-picture fx slide-top staggered-m" style="--i:1">
+      <source media="(max-width: 600px)" srcset="/images/lawn_1.png">
+      <source media="(min-width: 601px)" srcset="/images/lawn_1.png">
+      <img loading="lazy" decoding="async" src="/images/lawn_1.png" alt="green lawn maintenance service" width="630"
+        height="528" aria-hidden="true">
+    </picture>
+    <div class="cs-content fx slide-top staggered-m" style="--i:2">
+      <span class="cs-topper">Featured Service</span>
+      <br />
+      <h3 class="cs-h3">Weekly Mowing, Trimming & <span class="cs-color">Seasonal Care</span></h3>
+      <p class="cs-text">
+        Keep your yard in top shape with our reliable lawn care services. From routine mowing to seasonal cleanups, we
+        ensure your lawn stays green, healthy, and inviting throughout the year.
+      </p>
+      <ul class="cs-ul">
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16"
+            height="18">
+          Scheduled weekly or bi-weekly mowing
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16"
+            height="18">
+          Weed control and fertilization programs
+        </li>
+        <li class="cs-li">
+          <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow" width="16"
+            height="18">
+          Seasonal cleanups: spring & fall yard prep
+        </li>
+      </ul>
+      <a href="/contact" class="cs-button-solid">Request a Lawn Care Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-254">
+  <div class="cs-container fx fade-in">
+    <div class="cs-content">
+      <span class="cs-topper">FAQ’s</span>
+      <h2 class="cs-title">Lawn Care FAQs</h2>
+      <p class="cs-text">
+        Quick answers about lawn mowing schedules, fertilization, cleanups, and what to expect when you hire The Grass
+        Guru for lawn care.
+      </p>
+    </div>
+    <div class="cs-flex-group">
+      <ul class="cs-faq-group fx slide-top staggered-m" style="--i:1">
+        <!-- Active class added as default -->
+        <li class="cs-faq-item active">
+          <button class="cs-button">How often should my lawn be mowed?</button>
+          <p class="cs-item-p">
+            Most lawns thrive with weekly mowing during the growing season. We can adjust frequency based on your lawn’s
+            needs and growth rate.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Do you offer fertilization and weed control?</button>
+          <p class="cs-item-p">
+            Yes. We provide custom fertilization programs and weed control treatments to keep your lawn green, healthy,
+            and free of invasive weeds.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Can you handle seasonal cleanups?</button>
+          <p class="cs-item-p">
+            Absolutely. We take care of spring and fall cleanups, including leaf removal, debris hauling, and prepping
+            your lawn for the next season.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Do you offer one-time or ongoing services?</button>
+          <p class="cs-item-p">
+            We offer both! Choose from one-time cleanups or set up a regular mowing and maintenance schedule for
+            worry-free lawn care.
+          </p>
+        </li>
+        <li class="cs-faq-item">
+          <button class="cs-button">Are you licensed and insured?</button>
+          <p class="cs-item-p">
+            Yes, The Grass Guru is fully insured, and we stand behind the quality of our work with dependable,
+            professional service.
+          </p>
+        </li>
+      </ul>
+      <div class="cs-cta fx slide-top staggered-m" style="--i:2">
+        <h3 class="cs-h3">Ready for a Lawn You’ll Love?</h3>
+        <p class="cs-cta-p">
+          Tell us about your lawn care needs and we’ll prepare a customized service plan with pricing and schedule
+          options.
+        </p>
+        <a href="/contact" class="cs-button-solid">Contact The Grass Guru</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+    for (const item of faqItems) {
+      const onClick = () => {
+        item.classList.toggle('active')
+      }
+      item.addEventListener('click', onClick)
+    }
+  </script>
+</section></main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/logo.png" alt="logo"
+                    width="264" height="78"></a>
+
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Services</h2>
+                    </li>
+                    <li><a href="/lawn-care-maintenance/">Lawn Care & Maintenance</a></li>
+                    <li><a href="/landscape-design-installation/">Landscape Design & Installation</a></li>
+                    <li><a href="/seasonal-cleanup/">Seasonal Clean-Up & Yard Care</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>
+                        <a href="/contact">Michigan, US</a>
+                    </li>
+                    <li>
+                        <a href="tel:810-858-4135">T: (810)-858-4135</a>
+                    </li>
+                    <li>
+                        <a href="mailto:badgerjason122@gmail.com">Click to Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span>Designed and Hand Coded by</span>
+        <a href="www.kalamazoowebsitedesign.com" target="_blank" rel="noopener">Kalamazoo Website Design</a>
+        <span class="copyright"> Copyright 2025 - Present</span>
+    </div>
+</footer>
+
+        <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/dark.js"></script>
+
+        <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+        <script defer>
+            document.addEventListener('scroll', (e) => {
+                const scroll = document.documentElement.scrollTop;
+                if (scroll >= 100) {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .add('scroll')
+                } else {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .remove('scroll')
+                }
+            });
+        </script>
+
+    </body>
+</html>
